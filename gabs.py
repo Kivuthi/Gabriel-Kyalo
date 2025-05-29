@@ -18,7 +18,6 @@ def login():
 def toyota():
     return render_template('toyota.html')
 
- HEAD
 @gabs.route('/about')
 def about():
     return render_template ('about.html')
@@ -27,8 +26,11 @@ def about():
 def account():
     return render_template('account.html')
 
+@gabs.route('/contact')
+def contact():
+    return render_template('contact.html')
 
- 47d0828e0db0d2630e9d0f1f17327718a31306d2
+
 if __name__ == '__main__':
     gabs.run(debug=True)
     
