@@ -75,17 +75,28 @@
 
     <div class="dropdown-content">
       <label for="vehicles">Survey Vehicles:</label>
-      <select name="Vehicles">
+      <select id="vehicles" name="vehicles" onchange="navigate(this)">
         <option value="" disabled selected>Get Vehicles</option>
-        <option value="local">Available Stock</option>
-        <option value="import">Import Direct</option>
+        <option value="local"><a href="#vehicles">Available Stock</a></option>
+        <option value="import"><a href="mailto:officialdee77@gmail.com">Import Direct</a></option>
       </select>
 
+      <script>
+        function navigate(select) {
+          const value = select.value;
+          if (value.startsWith('mailto:')) {
+            window.location.href = value;
+          } else if (value.startsWith('#')) {
+            window.location.hash = value;
+          }
+        }
+      </script>
+
       <label>Survey Bikes:</label>
-      <select name="bikes">
+      <select id="bikes" name="bikes" onchange="navigate(this)">
         <option value="" disabled selected>Get Bikes</option>
-        <option value="local">Available Stock</option>
-        <option value="import">Import Direct</option>
+        <option value="local"><a href="#bikes">Available Stock</a></option>
+        <option value="import"><a href="mailto:officialdee77@gmail.com">Import Direct</a></option>
       </select>
     </div>
 
@@ -515,10 +526,10 @@
   <p>&copy; 2025 Gabitech Investments All rights reserved.</p>
 
   <div class="media">
-    <a href="#" target="_blank"><i class="fa-brands fa-facebook fa-bounce" style="color: white;"></i></a>
-    <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-bounce" style="color: white;"></i></a>
-    <a href="#" target="_blank"><i class="fa-brands fa-x-twitter fa-bounce" style="color: white;"></i></a>
-    <a href="#" target="_blank"><i class="fa-brands fa-whatsapp fa-bounce" style="color: white;"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61576744570713" target="_blank"><i class="fa-brands fa-facebook fa-bounce" style="color: white;"></i></a>
+    <a href="https://www.instagram.com/gabitech_investments/" target="_blank"><i class="fa-brands fa-instagram fa-bounce" style="color: white;"></i></a>
+    <a href="https://x.com/Gabitech_LTD" target="_blank"><i class="fa-brands fa-x-twitter fa-bounce" style="color: white;"></i></a>
+    <a href="https://wa.me/254729098337" target="_blank"><i class="fa-brands fa-whatsapp fa-bounce" style="color: white;"></i></a>
   </div>
 </section>
 

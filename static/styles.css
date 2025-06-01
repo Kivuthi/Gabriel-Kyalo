@@ -454,6 +454,24 @@ hr{
   font-family: 'Times New Roman', Times, serif;
 }
 
+.col-lg-6 img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.col-lg-6 h2{
+  color: white;
+  font-weight: bold;
+}
+
+.col-lg-6 p{
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+
+
 .about-link a{
   color: white;
   text-decoration: none;
@@ -494,11 +512,6 @@ hr{
 }
 
 
-.alt-section 
-.alt-text {
-  /* max-width: 500px; */
-}
-
 .alt-section.reverse {
   flex-direction: row-reverse;
 }
@@ -517,7 +530,7 @@ hr{
 
 .cont-image img{
   width: 100vw;
-  height: 800px;
+  height: 700px;
   object-fit: cover;
   display: block;
   margin-bottom: 30px;
@@ -527,6 +540,104 @@ hr{
   overflow: hidden;
 }
 
-.contact-area-header{
+.contact-area-header a{
   justify-items: center;
+  text-decoration: none;
+  font-size: 1,7rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding: 27px auto;
+  color: white;
+  font-size: larger;
+}
+
+.contact-area{
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-area h1{
+  color: white;
+}
+
+.cont-info{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.cont-info,
+.contact-location{
+  margin-left: 90px;
+  margin-right: 180px;
+}
+
+.cont-info,
+.contact-location h2{
+  color: white;
+}
+
+.contact-location{
+  margin-left: 100px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(246, 250, 250, 0.1);
+}
+
+.contact-location p{
+font-size: 1.3rem;
+}
+
+.communication p a{
+color: white;
+text-decoration: none;
+}
+
+.communication p a:hover{
+  color: black;
+}
+
+.contact{
+  margin-left: 100px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(246, 250, 250, 0.1);
+}
+
+.intouch label{
+display: block;
+margin: 10px 0 5px;
+font-weight: bold;
+font-size: larger;
+}
+
+.intouch input,
+.intouch textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.intouch button{
+  background-color: rgb(182, 179, 179);
+  color: #eee4e4;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intouch button:hover{
+  background-color: #1fb6ab;
 }
