@@ -502,3 +502,31 @@ hr{
 .alt-section.reverse {
   flex-direction: row-reverse;
 }
+
+.contact{
+  width: 100%;
+}
+
+.contact-text{
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.cont-image img{
+  width: 100vw;
+  height: 800px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.cont-image{
+  overflow: hidden;
+}
+
+.contact-area-header{
+  justify-items: center;
+}
