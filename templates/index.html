@@ -81,23 +81,23 @@
       <label for="vehicles">Survey Vehicles:</label>
       <select id="vehicles" name="vehicles" onchange="navigate(this)">
         <option value="" disabled selected>Get Vehicles</option>
-        <option value="local"><a href="#vehicles">Available Stock</a></option>
-        <option value="import"><a href="mailto:officialdee77@gmail.com">Import Direct</a></option>
+        <option value="#vehicles">Available Stock</option>
+        <option value="#">Import Direct</option>
       </select>
 
       <label>Survey Bikes:</label>
-      <select id="bikes" name="bikes" onchange="navigate"(this)">
+      <select id="bikes" name="bikes" onchange="navigate(this)">
         <option value="" disabled selected>Get Bikes</option>
-        <option value="local"><a href="#bikes">Available Stock</a></option>
-        <option value="import"><a href="mailto:officialdee77@gmail.com">Import Direct</a></option>
+        <option value="#vehicles">Available Stock</option>
+        <option value="#">Import Direct</option>
       </select>
     </div>
-
-    <div class="next">
-      <h1>FOUND WHAT YOU'RE LOOKING FOR?</h1>
-      <p>Let Us Get Started</p>
-    </div>
   </section>
+
+  <div class="next">
+    <h1>FOUND WHAT YOU'RE LOOKING FOR?</h1>
+    <p>Let Us Get Started</p>
+  </div>
   
   <section class="car-listing">
   <div class="car-card">
@@ -528,5 +528,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

@@ -1,12 +1,15 @@
-        function navigate(select) {
-          const value = select.value;
-          if (value.startsWith('mailto:')) 
-            {
-            window.location.href = value;
-          }
-           else if (value.startsWith('#'))
-             {
-            window.location.hash = value;
-          }
-        }
-      
+function navigate(selectElement) {
+    const url = selectElement.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
+  function navigate(selectElement) {
+    const url = selectElement.value;
+    if (url) {
+      window.location.href = url;
+      selectElement.selectedIndex = 0; 
+    }
+  }
+  
